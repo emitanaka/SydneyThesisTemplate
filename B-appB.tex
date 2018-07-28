@@ -1,0 +1,28 @@
+\chapter{Linear Mixed Model}\label{lmm}
+The extension to the linear models is the linear mixed models. A general form for the linear mixed model is given by 
+\begin{equation}
+\boldsymbol{y} = \boldsymbol{X}\boldsymbol{\tau} + \boldsymbol{Z}\boldsymbol{u} + \boldsymbol{e} \label{eq:lmm}
+\end{equation}
+where $\boldsymbol{y}$ is the $n\times 1$ vector of observations on the trait (or response) of interest, $\boldsymbol{\tau}$ is a $p \times 1$ vector of fixed effects, $\boldsymbol{u}$ is a $q \times 1$ vector of random effects, $\boldsymbol{X}$ and $\boldsymbol{Z}$ are associated (known) design matrices specifying the factors and covariates (explanatory variables) with corresponding fixed and random effects vector respectively, and $\boldsymbol{e}$ is the $n\times 1$ vector of errors. We assume that rank of $\boldsymbol{X}$ is $p_0 < p$ (i.e. non-full rank). 
+
+To complete the
+specification, we assume that the joint distribution of $(\boldsymbol{u}, \boldsymbol{e})$ is
+$$ \begin{bmatrix}
+\boldsymbol{u} \\
+\boldsymbol{e} 
+\end{bmatrix}
+\sim N \left( 
+\begin{bmatrix}
+\boldsymbol{0} \\
+\boldsymbol{0} 
+\end{bmatrix}, 
+\begin{bmatrix}
+\boldsymbol{G} & \boldsymbol{0} \\
+\boldsymbol{0} & \boldsymbol{R} 
+\end{bmatrix}
+\right)
+$$
+where $\boldsymbol{G}(\boldsymbol{\kappa_G})$ and $\boldsymbol{R}(\boldsymbol{\kappa_R})$ are covariance matrices which depend on vectors $\boldsymbol{\kappa_G}$ and $\boldsymbol{\kappa_R}$ respectively; and $\theta$ is the global scale parameter. 
+We let $\boldsymbol{\kappa} = (\boldsymbol{\kappa_G}^\top, \boldsymbol{\kappa_R}^\top)^\top$ denote the complete vectors of variance parameters. 
+
+It follows that $\boldsymbol{y} \sim N(\boldsymbol{X\tau}, \boldsymbol{V})$ where $\boldsymbol{V} = \boldsymbol{ZGZ}^\top + \boldsymbol{R}$ where $\boldsymbol{V}=\boldsymbol{V}(\boldsymbol{\kappa})$. 

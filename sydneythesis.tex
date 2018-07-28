@@ -1,0 +1,47 @@
+% This is a LaTeX thesis template for University of Sydney.
+% to be used with Rmarkdown
+% Emi Tanaka is responsible for this modified template.
+% The original template is by Rob J Hyndman for students in Monash University.
+% Version: 28 July 2018
+
+\documentclass{sydneythesis}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add any LaTeX packages and other preamble here if required
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{$author$}
+\title{$title$}
+\degrees{$degrees$}
+\def\country{$country$}
+\def\department{$department$}
+\def\university{$university$}
+\def\degreetitle{$degreetype$}
+\def\logo{$logo$}
+% Add subject and keywords below
+\hypersetup{
+     pdfsubject={$subject$},
+     pdfkeywords={$keywords$},
+     pdfauthor={$author$},
+     pdftitle={$title$},
+     pdfproducer={Bookdown with LaTeX}
+}
+
+
+\bibliography{thesisrefs}
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\titlepage
+
+{\setstretch{1.2}\sf\tighttoc\doublespacing}
+
+$body$
+
+\printbibliography[heading=bibintoc]
+
+
+
+\end{document}

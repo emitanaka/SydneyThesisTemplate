@@ -1,0 +1,9 @@
+---
+knit: "bookdown::render_book"
+---
+
+# Acknowledgements {-}
+
+Generally anyone that helped you in your research journey should be acknowledged here.
+
+Large credit of this thesis template goes to Rob J Hyndman. His original template can be found at his [github repositary](https://github.com/robjhyndman/MonashThesis).

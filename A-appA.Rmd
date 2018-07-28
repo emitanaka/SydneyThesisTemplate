@@ -1,0 +1,11 @@
+---
+knit: "bookdown::render_book"
+---
+
+\appendix
+
+# Additional stuff
+
+You might put some computer output here, or maybe additional tables.
+
+Note that `\appendix` must appear before your first appendix although this is not required for other appendices.

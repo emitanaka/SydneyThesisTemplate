@@ -1,0 +1,13 @@
+---
+knit: "bookdown::render_book"
+---
+
+# Statement of Originality {-}
+
+
+This is to certify that the intellectual content of this thesis is the product of my own work and that all the assistance received in preparing this thesis and sources have been acknowledged. 
+
+*This statement is not needed for Honours Thesis.*
+
+
+\vspace*{2cm}\par\authorname
